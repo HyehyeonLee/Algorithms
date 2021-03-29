@@ -12,18 +12,11 @@ public class SelectTwoInteger {
     public int[] solution(int[] numbers){
         int[] answer = {};
         TreeSet<Integer> set = new TreeSet<>();
-        int[] sumArray = new int[(numbers.length * (numbers.length-1)) / 2];
-        int sumArrayIdx = 0;
         for(int i = 0; i<numbers.length; i++){
             for(int j = 0; j<i; j++){
                 int sum = numbers[i] + numbers[j];
-                sumArray[sumArrayIdx] += sum;
-                sumArrayIdx++;
+                set.add(sum);
             }
-        }
-
-        for(int i = 0; i<sumArray.length; i++){
-            set.add(sumArray[i]);
         }
 
         answer = new int[set.size()];
