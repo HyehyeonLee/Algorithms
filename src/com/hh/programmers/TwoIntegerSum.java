@@ -1,4 +1,4 @@
-package com.hh.algorithms;
+package com.hh.programmers;
 
 public class TwoIntegerSum {
     //두 정수 사이의 합

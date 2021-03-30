@@ -1,4 +1,4 @@
-package com.hh.algorithms;
+package com.hh.programmers;
 
 public class Main {
 

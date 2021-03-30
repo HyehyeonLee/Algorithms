@@ -1,4 +1,4 @@
-package com.hh.algorithms;
+package com.hh.programmers;
 
 public class FindKim {
     //서울에서 김서방 찾기

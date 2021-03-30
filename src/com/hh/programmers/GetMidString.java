@@ -1,6 +1,4 @@
-package com.hh.algorithms;
-
-import java.util.StringTokenizer;
+package com.hh.programmers;
 
 public class GetMidString {
     //가운데 글자 가져오기
