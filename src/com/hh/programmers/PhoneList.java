@@ -22,9 +22,9 @@ public class PhoneList {
         }
 
 
-        for(String phone : hash.keySet()){
-            for(int j = 0; j< hash.size(); j++){
-                if(phone.startsWith(phone_book[j]) && !phone.equals(phone_book[j])){
+        for(String key : hash.keySet()){
+            for(String phone : phone_book){
+                if(phone.startsWith(key) && !phone.equals(key)){
                     hash.put(phone, idx+1);
                 }
             }
@@ -39,7 +39,7 @@ public class PhoneList {
             answer = false;
         }
 
-        System.out.println(hash.toString());
+        //System.out.println(hash.toString());
 
         return answer;
     }
