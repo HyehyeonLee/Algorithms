@@ -27,7 +27,14 @@ public class PhoneList {
             }
         }
 
-        System.out.println(hash.toString());
+        int flag = 0;
+        for(int v : hash.values()){
+            flag += v;
+        }
+
+        if(flag != 0){
+            answer = false;
+        }
 
         return answer;
     }
