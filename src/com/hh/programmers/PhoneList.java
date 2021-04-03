@@ -13,31 +13,23 @@ public class PhoneList {
         boolean answer = true;
         HashMap<String, Integer> hash = new HashMap<>();
         int idx = 0;
-        for(int i = 0; i<phone_book.length; i++){
-                if(!hash.containsKey(phone_book[i])){
-                    hash.put(phone_book[i], idx);
-                }else{
-                    hash.put(phone_book[i], idx+1);
-                }
+        for(String phone : phone_book){
+            hash.put(phone, idx);
+
         }
 
-
-        for(String key : hash.keySet()){
-            for(String phone : phone_book){
+        for(String phone : phone_book){
+            for(String key : hash.keySet()){
                 if(phone.startsWith(key) && !phone.equals(key)){
                     hash.put(phone, idx+1);
                 }
             }
         }
 
-        int flag = 0;
-        for(int v : hash.values()){
-            flag += v;
-        }
-
-        if(flag != 0){
+        if(hash.containsValue(1)){
             answer = false;
         }
+
 
         //System.out.println(hash.toString());
 
