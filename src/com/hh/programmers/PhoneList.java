@@ -11,22 +11,11 @@ public class PhoneList {
 
     public boolean solution(String[] phone_book) {
         boolean answer = true;
-        String prefix = phone_book[0];
-        int idx = 0;
-
-        for(int i = 0; i<phone_book.length; i++){
-            if(phone_book[i].length() < prefix.length()){
-                prefix = phone_book[i];
-                idx = i;
-            }
-        }
-
-        for(int i = 0; i<phone_book.length; i++){
-            if(i == idx){
-                continue;
-            }
-            if(phone_book[i].startsWith(prefix)){
-                answer = false;
+        for(int i = 0; i< phone_book.length; i++){
+            for(int j = 0; j<=i; j++){
+                if(phone_book[i].startsWith(phone_book[j]) && i != j){
+                    answer = false;
+                }
             }
         }
 
@@ -35,7 +24,7 @@ public class PhoneList {
 
     public static void main(String[] args) {
         PhoneList phone = new PhoneList();
-        String[] phone_book = {"97674223", "1195524421", "119"};
+        String[] phone_book = {"119", "97674223", "1195524421"};
         System.out.println(phone.solution(phone_book));
     }
 }
