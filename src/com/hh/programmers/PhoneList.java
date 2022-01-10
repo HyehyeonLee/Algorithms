@@ -1,28 +1,27 @@
 package com.hh.programmers;
 
-import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 public class PhoneList {
-    //전화번호 목록
-	//효율성 테스트 3,4 통과 X
-	//정확성: 83.3
-	//효율성: 8.3
-	//합계: 91.7 / 100.0
-    public PhoneList() {
-        super();
-    }
-
+	
     public boolean solution(String[] phone_book) {
         boolean answer = true;
-        for (String phone : phone_book) {
-            for (String key : phone_book) {
-                if (phone.startsWith(key) && !phone.equals(key)) {
-                    answer = false;
-                    break;
-                }
-            }
+        HashMap<String, Integer> map = new HashMap<String, Integer>();
+        
+        for(String phone : phone_book) {
+        	map.put(phone, 0);
         }
+        
+        for(int i = 0; i<phone_book.length; i++) {
+        	for(int j = 0; j<phone_book[i].length(); j++) {
+        		String key = phone_book[i].substring(0, j);
+        		if(map.containsKey(key)) {
+        			answer = false;
+        		}
+        	}
+        }
+        
         return answer;
     }
 
