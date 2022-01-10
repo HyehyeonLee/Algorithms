@@ -5,6 +5,10 @@ import java.util.HashMap;
 
 public class PhoneList {
     //전화번호 목록
+	//효율성 테스트 3,4 통과 X
+	//정확성: 83.3
+	//효율성: 8.3
+	//합계: 91.7 / 100.0
     public PhoneList() {
         super();
     }
