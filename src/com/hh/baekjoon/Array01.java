@@ -2,7 +2,7 @@ package com.hh.baekjoon;
 
 import java.util.Scanner;
 
-public class FindMaxMin {
+public class Array01 {
 	//백준 10818번
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
