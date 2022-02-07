@@ -3,7 +3,7 @@ package com.hh.baekjoon;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class NumVoca {
+public class String06 {
 //1152번
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

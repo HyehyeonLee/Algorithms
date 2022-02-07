@@ -2,7 +2,7 @@ package com.hh.baekjoon;
 
 import java.util.Scanner;
 
-public class AsciiCode {
+public class String01 {
 	//11654번
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

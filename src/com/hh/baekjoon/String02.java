@@ -2,7 +2,7 @@ package com.hh.baekjoon;
 
 import java.util.Scanner;
 
-public class SumNumbers {
+public class String02 {
 	//11720번
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
