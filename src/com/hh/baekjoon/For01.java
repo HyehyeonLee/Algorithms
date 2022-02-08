@@ -2,7 +2,7 @@ package com.hh.baekjoon;
 
 import java.util.Scanner;
 
-public class Gugudan {
+public class For01 {
 	//백준 2739번
     public static void printGugudan(int dan) {
         for(int i = 1; i <= 9; i++) {

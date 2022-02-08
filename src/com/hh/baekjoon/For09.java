@@ -2,8 +2,8 @@ package com.hh.baekjoon;
 
 import java.util.Scanner;
 
-public class PrintStar2 {
-
+public class For09 {
+	//백준 2438번
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		

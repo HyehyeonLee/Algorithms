@@ -1,7 +1,5 @@
 package com.hh.baekjoon;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Array05 {
@@ -9,23 +7,20 @@ public class Array05 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		ArrayList<Double> list = new ArrayList<Double>();
+		int sum = 0;
+		int max = 0;
+		int score = 0;
+		
 		for(int i = 0; i<n; i++) {
-			double num = sc.nextInt();
-			list.add(num);
-		}
-		
-		double max = Collections.max(list);
-		
-		for(int j = 0; j<list.size(); j++) {
-			list.set(j, list.get(j) / max * 100);
-		}
-		
-		double sum = 0;
-		for(double score : list) {
+			score = sc.nextInt();
 			sum += score;
+			if(score > max) {
+				max = score;
+			}
 		}
 		
-		System.out.println(sum / n);
+		double avg = 0;
+		avg = 100.0 * sum / max / n;
+		System.out.println(avg);
 	}
 }
