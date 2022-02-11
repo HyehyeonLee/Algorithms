@@ -2,7 +2,7 @@ package com.hh.thisiscoding;
 
 import java.util.Scanner;
 
-public class q304 {
+public class Q304 {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

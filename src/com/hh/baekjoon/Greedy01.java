@@ -2,7 +2,7 @@ package com.hh.baekjoon;
 
 import java.util.Scanner;
 
-public class Coin {
+public class Greedy01 {
 	//백준 11047번
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

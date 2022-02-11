@@ -2,7 +2,7 @@ package com.hh.thisiscoding;
 
 import java.util.*;
 
-public class q509 {
+public class Q509 {
 	public static boolean[] visited = new boolean[9];
 	public static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
 	

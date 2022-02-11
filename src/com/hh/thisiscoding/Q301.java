@@ -1,6 +1,6 @@
 package com.hh.thisiscoding;
 
-public class q301 {
+public class Q301 {
 	public static void main(String[] args) {
 		int n = 1260;
 		int count = 0;
