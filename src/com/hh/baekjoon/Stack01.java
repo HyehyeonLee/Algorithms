@@ -1,31 +1,53 @@
 package com.hh.baekjoon;
 
-import java.util.Scanner;
+import java.io.*;
 import java.util.Stack;
 
 public class Stack01 {
 	//백준 10828번
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Stack<Integer> stack = new Stack<Integer>();
-        int n = sc.nextInt();
-
-        for(int i = 0; i<=n; i++){
-            String cmd = sc.nextLine();
-            if(cmd.contains("push")){
-                cmd = cmd.replace("push ", "");
-                stack.push(Integer.parseInt(cmd));
-            }else if(cmd.equals("pop")){
-            	System.out.println(stack.isEmpty()?-1:stack.pop());
-            }else if(cmd.equals("size")){
-            	System.out.println(stack.size());
-            }else if(cmd.equals("empty")){
-            	System.out.println(stack.isEmpty()?1:0);
-            }else if(cmd.equals("top")){
-            	System.out.println(stack.isEmpty()?-1:stack.peek());
-            }
-        }
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         
-        sc.close();
+        Stack<Integer> stack = new Stack<Integer>();
+        int n = Integer.parseInt(br.readLine());
+
+        for(int i = 0; i<n; i++){
+            String[] cmd = br.readLine().split(" ");
+            switch (cmd[0]) {
+			case "push":
+				stack.push(Integer.parseInt(cmd[1]));
+				break;
+			case "pop":
+				if(stack.isEmpty()){
+					bw.write("-1" + "\n");
+				}else{
+					bw.write(stack.pop() + "\n");
+				}
+				break;
+			case "size":
+				bw.write(stack.size() + "\n");
+				break;
+			case "empty":
+				if(stack.isEmpty()){
+                    bw.write("1" + "\n");
+                }else{
+                    bw.write("0" + "\n");
+                }
+				break;
+			case "top":
+				if(stack.isEmpty()){
+					bw.write("-1" + "\n");
+				}else{
+					bw.write(stack.peek() + "\n");
+				}
+				break;
+
+			}
+
+        }
+        bw.flush();
+        bw.close();
+
     }
 }
