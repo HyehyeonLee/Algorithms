@@ -2,7 +2,7 @@ package com.hh.baekjoon;
 
 import java.util.Scanner;
 
-public class Alarm {
+public class If05 {
 	//백준 2884번
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

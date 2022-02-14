@@ -2,7 +2,7 @@ package com.hh.baekjoon;
 
 import java.util.Scanner;
 
-public class Math101 {
+public class BasicMath101 {
 	//백준 1712번
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
