@@ -2,7 +2,7 @@ package com.hh.baekjoon;
 
 import java.util.Scanner;
 
-public class BasicMath05 {
+public class BasicMath105 {
 	//백준 10250번
 	public static int acmHotel(int h, int w, int n) {
 		int answer = 0;
