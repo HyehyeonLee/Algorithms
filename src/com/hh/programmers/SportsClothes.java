@@ -3,7 +3,8 @@ package com.hh.programmers;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Greedy01 {
+public class SportsClothes {
+	//체육복
 	public int solution(int n, int[] lost, int[] reserve) {
         int answer =  n - lost.length;
         Arrays.sort(lost);
@@ -35,7 +36,7 @@ public class Greedy01 {
     }
 
 	public static void main(String[] args) {
-		Greedy01 greedy = new Greedy01();
+		SportsClothes greedy = new SportsClothes();
 		int n = 5;
 		int lost[] = {2,4};
 		int reserve[] = {1,3,5};

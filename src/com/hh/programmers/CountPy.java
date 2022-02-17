@@ -1,6 +1,7 @@
 package com.hh.programmers;
 
 public class CountPy {
+	//문자열 내 p와 y의 개수
 	boolean solution(String s) {
         boolean answer = false;
         char[] c = s.toCharArray();

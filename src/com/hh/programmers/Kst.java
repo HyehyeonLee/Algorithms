@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Kst {
+	//K번째수
 	public int[] solution(int[] array, int[][] commands) {
         int[] answer = new int[commands.length];
         

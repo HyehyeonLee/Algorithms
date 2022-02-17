@@ -3,6 +3,7 @@ package com.hh.programmers;
 import java.util.*;
 
 public class SumPosition {
+	//자릿수 더하기
 	public int solution(int n) {
         int answer = 0;
         String str = String.valueOf(n);

@@ -1,6 +1,7 @@
 package com.hh.programmers;
 
-public class NegaPosi {
+public class SumNegaPosi {
+	//음양 더하기
 	public int solution(int[] absolutes, boolean[] signs) {
         int answer = 0;
         
@@ -15,7 +16,7 @@ public class NegaPosi {
     }
 	
 	public static void main(String[] args) {
-		NegaPosi sol = new NegaPosi();
+		SumNegaPosi sol = new SumNegaPosi();
 		int[] absolutes = {1,2,3};
 		boolean[] signs = {false,false,true};
 		System.out.println(sol.solution(absolutes, signs));

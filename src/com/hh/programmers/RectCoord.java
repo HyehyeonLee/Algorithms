@@ -1,6 +1,7 @@
 package com.hh.programmers;
 
 public class RectCoord {
+	//나머지 한 점 문제
 	public int[] solution(int[][] v) {
         int[] answer = new int[2];
         for(int i = 0; i<v.length; i++) {

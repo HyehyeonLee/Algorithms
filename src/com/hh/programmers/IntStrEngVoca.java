@@ -1,7 +1,7 @@
 package com.hh.programmers;
 
 public class IntStrEngVoca {
-	
+	//숫자 문자열과 영단어
 	public int solution(String s) {
         int answer = 0;
         String[] numbers = {"zero", "one", "two", "three", "four", "five", 

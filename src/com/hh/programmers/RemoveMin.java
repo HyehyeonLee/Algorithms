@@ -3,7 +3,7 @@ package com.hh.programmers;
 import java.util.ArrayList;
 
 public class RemoveMin {
-
+	//제일 작은 수 제거하기
 	public int[] solution(int[] arr) {
 		int[] answer = {};
 		if (arr.length == 1) {

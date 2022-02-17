@@ -1,6 +1,7 @@
 package com.hh.programmers;
 
 public class LackMoney {
+	//부족한 금액 계산하기
 	public long solution(int price, int money, int count) {
         long answer = 0;
         long need = 0;

@@ -1,6 +1,7 @@
 package com.hh.programmers;
 
 public class SquareRoot {
+	//정수 제곱근 판별
 	public long solution(long n) {
         long answer = 0;
         long root = (long) Math.sqrt(n);

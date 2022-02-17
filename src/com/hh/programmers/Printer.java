@@ -4,6 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Printer {
+	//프린터
 	public int solution(int[] priorities, int location) {
         int answer = 0;
         Queue queue = new LinkedList<Integer>();

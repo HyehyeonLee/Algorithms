@@ -1,6 +1,7 @@
 package com.hh.programmers;
 
 public class Collatz {
+	//콜라츠 추측
 	public int solution(int num) {
         int answer = 0;
         double dnum = num;

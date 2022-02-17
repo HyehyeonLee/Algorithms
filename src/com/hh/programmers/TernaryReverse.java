@@ -1,6 +1,7 @@
 package com.hh.programmers;
 
 public class TernaryReverse {
+	//3진법 뒤집기
 	public int solution(int n) {
         int answer = 0;
         String ans = "";

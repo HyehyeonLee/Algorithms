@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class DislikeSameNum {
+	//같은 숫자는 싫어
 	public int[] solution(int []arr) {
         int[] answer = {};
         ArrayList<Integer> list = new ArrayList<Integer>();        

@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map.Entry;
 
 public class CantFinishMarathon {
+	//완주하지 못한 선수
 	public String solution(String[] participant, String[] completion) {
         String answer = "";
         HashMap<String, Integer> map = new HashMap<String, Integer>();

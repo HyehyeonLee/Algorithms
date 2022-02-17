@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map.Entry;
 
 public class PhoneList {
-	
+	//전화번호 목록
     public boolean solution(String[] phone_book) {
         boolean answer = true;
         HashMap<String, Integer> map = new HashMap<String, Integer>();

@@ -1,6 +1,7 @@
 package com.hh.programmers;
 
 public class StringDesc {
+	//문자열 내림차순으로 배치하기
 	public String solution(String s) {
         String answer = "";
         char[] arr = new char[s.length()];

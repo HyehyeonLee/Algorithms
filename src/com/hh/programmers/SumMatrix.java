@@ -1,6 +1,7 @@
 package com.hh.programmers;
 
 public class SumMatrix {
+	//행렬의 덧셈
 	public int[][] solution(int[][] arr1, int[][] arr2) {
         int[][] answer = new int[arr1.length][arr1[0].length];
         

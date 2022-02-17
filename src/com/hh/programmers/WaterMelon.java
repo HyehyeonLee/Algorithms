@@ -1,6 +1,7 @@
 package com.hh.programmers;
 
 public class WaterMelon {
+	//수박수박수박수박수박수박수?
 	public String solution(int n) {
         char[] answer = new char[n];
         

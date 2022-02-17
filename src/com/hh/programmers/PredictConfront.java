@@ -1,6 +1,7 @@
 package com.hh.programmers;
 
 public class PredictConfront {
+	//예상 대진표
 	public int solution(int n, int a, int b)
     {
         int answer = 0;

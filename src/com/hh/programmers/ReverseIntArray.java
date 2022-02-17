@@ -1,6 +1,7 @@
 package com.hh.programmers;
 
 public class ReverseIntArray {
+	//자연수 뒤집어 배열로 만들기
 	public int[] solution(long n) {
         String strs[] = String.valueOf(n).split("");
         int[] answer = new int[strs.length];

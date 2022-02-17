@@ -3,6 +3,7 @@ package com.hh.programmers;
 import java.util.ArrayList;
 
 public class SumNotInNum {
+	//없는 숫자 더하기
 	public int solution(int[] numbers) {
         int answer = 0;
         ArrayList<Integer> arr = new ArrayList<Integer>();

@@ -1,6 +1,7 @@
 package com.hh.programmers;
 
 public class StringBasic {
+	//문자열 다루기 기본
 	public boolean solution(String s) {
         boolean answer = false;
         int n = 0;

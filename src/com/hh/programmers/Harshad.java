@@ -1,6 +1,7 @@
 package com.hh.programmers;
 
 public class Harshad {
+	//하샤드 수
 	public boolean solution(int x) {
         boolean answer = false;
         String str = String.valueOf(x);

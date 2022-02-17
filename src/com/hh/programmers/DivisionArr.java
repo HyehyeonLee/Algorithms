@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class DivisionArr {
+	//나누어 떨어지는 숫자 배열
 	public int[] solution(int[] arr, int divisor) {
         int[] answer = {};
         ArrayList<Integer> list = new ArrayList<Integer>();

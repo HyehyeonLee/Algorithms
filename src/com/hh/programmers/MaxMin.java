@@ -3,6 +3,7 @@ package com.hh.programmers;
 import java.util.Arrays;
 
 public class MaxMin {
+	//최댓값과 최솟값
 	public String solution(String s) {
         String answer = "";
         String[] strs = s.split(" ");
