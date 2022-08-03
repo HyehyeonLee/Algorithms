@@ -7,14 +7,14 @@ public class Array06 {
 	public static int solution(String s) {
 		int answer = 0;
 		String[] str = s.split("");
-		int idx = 1;
+		int idx = 0;
 		
 		for(int i = 0; i<str.length; i++) {
 			if(str[i].equals("O")) {
-				answer += (1 * idx);
 				idx++;
+				answer += idx;
 			}else if(str[i].equals("X")) {
-				idx = 1;
+				idx = 0;
 			}
 		}
 		
