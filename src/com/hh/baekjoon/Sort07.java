@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-class Coordinate2 implements Comparable<Coordinate2> {
+class Coordinate implements Comparable<Coordinate> {
 	private int x;
 	private int y;
 
-	public Coordinate2(int x, int y) {
+	public Coordinate(int x, int y) {
 		super();
 		this.x = x;
 		this.y = y;
@@ -31,11 +31,11 @@ class Coordinate2 implements Comparable<Coordinate2> {
 	}
 
 	@Override
-	public int compareTo(Coordinate2 o) {
-		if(this.y == o.y) {
-			return this.x - o.x;
+	public int compareTo(Coordinate o) {
+		if(this.x == o.x) {
+			return this.y - o.y;
 		}
-		return this.y - o.y;
+		return this.x - o.x;
 	}
 
 	@Override
@@ -48,7 +48,7 @@ class Coordinate2 implements Comparable<Coordinate2> {
 }
 
 public class Sort07 {
-	// 백준 11651번
+	// 백준 11650번
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		ArrayList<Coordinate2> list = new ArrayList<Coordinate2>();

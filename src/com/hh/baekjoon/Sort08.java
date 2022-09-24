@@ -2,41 +2,70 @@ package com.hh.baekjoon;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.Scanner;
 
+class Coordinate2 implements Comparable<Coordinate2> {
+	private int x;
+	private int y;
+
+	public Coordinate2(int x, int y) {
+		super();
+		this.x = x;
+		this.y = y;
+	}
+
+	public int getX() {
+		return x;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+
+	@Override
+	public int compareTo(Coordinate2 o) {
+		if(this.y == o.y) {
+			return this.x - o.x;
+		}
+		return this.y - o.y;
+	}
+
+	@Override
+	public String toString() {
+		return x + " " + y;
+	}
+	
+	
+
+}
+
 public class Sort08 {
-	//백준 1181번
+	// 백준 11651번
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		ArrayList<String> list = new ArrayList<String>();
-		
+		ArrayList<Coordinate2> list = new ArrayList<Coordinate2>();
+		Coordinate2 c;
 		int n = sc.nextInt();
+		
 		for(int i = 0; i<n; i++) {
-			String s = sc.next();
-			if(!list.contains(s)) {
-				list.add(s);
-			}
+			int x = sc.nextInt();
+			int y = sc.nextInt();
+			c = new Coordinate2(x, y);
+			list.add(c);
 		}
 		
-		Collections.sort(list, new Comparator<String>() {
-
-			@Override
-			public int compare(String o1, String o2) {
-				if(o1.length() < o2.length()) {
-					return -1;
-				}else if(o1.length() == o2.length()){
-					return o1.compareTo(o2);
-				}else {
-					return 1;
-				}
-			}
-			
-		});
-		
-		for(String str : list) {
-			System.out.println(str);
+		Collections.sort(list);
+		for(int j = 0; j < list.size(); j++) {
+			System.out.println(list.get(j).toString());
 		}
-		sc.close();
+		
 	}
 }
